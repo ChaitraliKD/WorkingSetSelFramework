@@ -28,8 +28,5 @@ public class HomePageRunner extends TestBase {
 		homepage.assertOptionFromAllDropdownIsSelected();
 	}
 
-	private void madeanothermethod() {
-		// TODO Auto-generated method stub
 
-	}
 }
