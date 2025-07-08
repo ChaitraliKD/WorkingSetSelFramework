@@ -6,8 +6,7 @@
       <class name="com.pages.TC.HomePageRunner">
         <methods>
           <include name="openBrowser"/>
-          <include name="quitBrowser"/>
-          <include name="allDropdownButtonClickableAndFunctional"/>
+          <include name="SearchboxIncompleteProductInputMatchingResults"/>
         </methods>
       </class> <!-- com.pages.TC.HomePageRunner -->
     </classes>

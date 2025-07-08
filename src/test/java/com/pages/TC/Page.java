@@ -4,6 +4,8 @@ import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
@@ -14,6 +16,7 @@ import org.testng.Assert;
 public class Page {
 	protected static RemoteWebDriver driver;
 
+	private static final Logger LOG = LogManager.getLogger(Page.class);
 	public static void invokeBrowser() {
 		EdgeOptions options = new EdgeOptions();
 		Map<String, Object> prefs = new HashMap<>();
@@ -75,6 +78,5 @@ public class Page {
 
 	public static void implicitWait() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
-
 	}
 }
